@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-</head>
-<body>
-<h2>Code is beautiful</h2>
-</body>
-</html>
+
+Instructions to add fiels 
+
+1. Add folder "blocks" in your theme root folder 
+2. Add the following code in your functions.php file 
+
+----------------------------------------------------------------------------------------
+
+function.php ka code-> 
+
+wp_enqueue_script( $nickname, $location, $dependencies, $version, $in_footer );
+/**
+ * Add custom blocks for gutenberg
+ */
+require get_template_directory() . '/blocks/blocks.php';
+
+
+------------------------------------------------------------------------------------------
