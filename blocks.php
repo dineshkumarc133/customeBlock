@@ -29,4 +29,6 @@ function custom_block_scripts() {
 }
 add_action('enqueue_block_assets', 'custom_block_scripts');
 
-// wp_enqueue_script( $nickname, $location, $dependencies, $version, $in_footer );
+ wp_enqueue_script( $nickname, $location, $dependencies, $version, $in_footer );
+
+
